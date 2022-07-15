@@ -9,7 +9,7 @@
 	-webkit-tap-highlight-color: transparent !important;
 }
 html{
-	
+	scroll-behavior: smooth;
 }
 body{
 	max-width: 1480px;
@@ -96,6 +96,14 @@ img{user-select: none;}
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	        flex-direction: column;
+}
+.grid{
+	display: grid;
+	display: -ms-grid;
+}
+.gtc-200{
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	-ms-grid-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 /*header*/
 .header{
@@ -218,10 +226,8 @@ img{user-select: none;}
 
 /*keunggulan*/
 .keunggulan .container{
+	grid-gap: 2rem 1rem;
 	padding-top: 2rem;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 2rem 1rem;
 	text-align: center;
 }
 .keunggulan .container .box{
@@ -379,9 +385,7 @@ img{user-select: none;}
 
 /*motor*/
 .motor .container{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 2rem 1rem;
+	grid-gap: 2rem 1rem;
 }
 .motor .container .box{
 	padding: 8px;
@@ -418,9 +422,7 @@ img{user-select: none;}
 	margin-top: 2rem;
 }
 .materi .container{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 2rem 1rem;
+	grid-gap: 2rem 1rem;
 }
 .materi .container .box{
 	padding: 16px;
