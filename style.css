@@ -672,6 +672,9 @@ img{user-select: none;}
 /*back-to-top*/
 .back-to-top{
 	position: fixed;
+	-moz-position: fixed;
+	-webkit-position: fixed;
+	-o-position: fixed;
 	bottom: 8px;
 	right: 8px;
 	border: 1px solid dodgerblue;
